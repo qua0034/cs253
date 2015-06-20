@@ -1,0 +1,25 @@
+private static void Main(string[] args)
+        {
+            Console.WriteLine("請輸入x的值");
+            int x = int.Parse(Console.ReadLine());
+            int sum = 0;
+            int a = x % 2;
+            if (a == 1)
+            {
+                for (int i = 1; i <= x; i = i + 2)
+                {
+                    sum += i;
+                }
+                Console.WriteLine("您輸入的值為奇數");
+                Console.WriteLine("1到" + x + "之間的奇數和為" + sum);
+            }
+            else
+            {
+                for (int i = 1; i < x; i = i + 2)
+                {
+                    sum += i;
+                }
+                Console.WriteLine("您輸入的值為偶數");
+                Console.WriteLine("1到" + x + "之間的奇數和為" + sum);
+            }
+        }
